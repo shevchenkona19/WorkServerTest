@@ -16,7 +16,7 @@ public interface ServerAPI {
     @GET("authorization/allUsers")
     Observable<List<UserEntity>> getAllUsers(@Query("Authorization") String token);
 
-    @POST("authorization/login")
+    @POST("authorization/login/")
     Observable<TokenEntity> loginUser(@Body LoginData data);
 
     @POST("authorization/registration")
